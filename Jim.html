@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            color: #333;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+}
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #8bbcfb, #57a4f2);
+            color: white;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+        }
+        img {
+            display: block;    
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 2px solid #000000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+        }
+
+
+        .img:hover {
+                transform: scale(1.05); 
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+        .Jim {
+            width: 300px;
+            height: auto;
+        }
+        h1, h2 {
+            color:black;
+        }
+        h2 {
+            border-bottom: 2px solid #3776b6;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .feedback {
+            margin-top: 30px;
+        }
+        .feedback-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9ff;
+            border-left: 5px solid #3776b6;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #8bbcfb;
+            color: white;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #280a80;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: block;
+            width: 200px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #8bbcfb;
+            color: white;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #3776b6;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script>
+        function mostrarAlerta() {
+            alert('Obrigado por visitar meu portfólio!');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Jim Halpert</h1>
+    </header>
+    <main>
+        <section>
+            <img src="Giovana/Jim.jpg" alt="A face da beleza absoluta" class="Jim"> 
+            <h2>Avaliação Anual de Jim Halpertim</h2>
+            <p>Cargo: Vendedor (ou, se você for Michael Scott, "o cara que me faz rir o tempo todo, mas que também me deixa irritado ao mesmo tempo"). </p>
+            <a href="#" class="button" onclick="mostrarAlerta()">Clique Aqui</a>
+        </section>
+        <section class="feedback">
+            <h2>Avaliado por: Michael Scott, Dwight Schrute, e Ryan Howard (porque, sabe, alguém tem que ser o juiz imparcial, e eu definitivamente não sou essa pessoa).</h2>
+            <div class="feedback-item">
+                <p><strong> Michael Scott:</strong>
+                    "Jim é... é... como eu diria... ele é o cara que todos podem contar para rir, mas também para se manter calmo quando tudo ao redor está desmoronando. Não, sério, ele é super competente. Ele não é só o cara que brinca com a câmera o tempo todo, ele realmente sabe como vender. Se ele estivesse mais interessado em ser o meu melhor amigo, seria perfeito.""</p>
+            </div>
+            <div class="feedback-item">
+                <p><strong>Dwight Schrute:</strong> "Jim é... mediamente competente. Ele pode ser engraçado, mas está sempre me sabotando. Como no caso de todas as suas piadas que têm como alvo o meu trabalho e a minha autoridade. De qualquer maneira, ele ainda é um vendedor de sucesso... mesmo que sua habilidade em vender seja metade 'humor' e metade 'fingir que está trabalhando'."</p>
+            </div>
+            <div class="feedback-item">
+                <p><strong>Ryan Howard:</strong> "Jim é o exemplo de como a abordagem tranquila e uma piada aqui e ali podem te levar ao topo. Ele pode não ser o mais agressivo, mas definitivamente tem a capacidade de causar desconforto psicológico nos outros, o que, por algum motivo, acaba fazendo com que ele seja eficaz. Nunca entendi isso, mas, hey, funciona para ele."</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Meu Portfólio | Feito com ❤️ por <a href="#">[Giovana]</a></p>
+    </footer>
+</body>
+</html>
