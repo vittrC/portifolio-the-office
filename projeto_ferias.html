@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O portifólio de Ryan Howard</title>
+    <style>
+
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+    animation: bg-scrolling-reverse 100s infinite linear; 
+}
+
+@keyframes bg-scrolling-reverse {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 0 -100%;
+    }
+}
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #451587, #3700b3);
+            color: white;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+            color:white;
+            font-family:serif
+        }
+        main {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+        }
+        img {
+            display: block;
+            max-width: 240px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            border: 4px solid #6200ea;
+            transition: transform 0.3s ease; 
+        }
+
+
+        img:hover {
+        transform: scale(1.1); 
+        
+        }
+
+        h1, h2 {
+            color: #6200ea;
+        }
+        h2 {
+            border-bottom: 2px solid #6200ea;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        p {
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .feedback {
+            margin-top: 30px;
+        }
+        .feedback-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f9f9ff;
+            border-left: 5px solid #6200ea;
+            border-radius: 10px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+        }
+        .feedback-item img {
+            max-width: 80px;
+            border-radius: 10px;
+            margin-right: 15px;
+        }
+        .feedback-item p {
+            margin: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: #3700b3;
+            color: white;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #ffcc00;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+button {
+  background-color: #c2bdca;
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 100px;
+  height: 45px;
+  transition: 0.3s;
+  margin-left: 43%;
+}
+
+button:hover {
+  background-color: #6f0cb5;
+  box-shadow: 0 0 0 5px #4c077a5f;
+  color: #fff;
+}
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>O portifólio de Ryan Howard</h1>
+    </header>
+    <main>
+        <section>
+            <img src="img1.jpg" alt=" Minha grandiosa figura">
+            <h2>Sobre Mim</h2>
+            <p>Bem-vindo ao meu portfólio! Sou apaixonado pelo que faço e estou sempre em busca de novos desafios. Aqui você encontrará avaliações sinceras de pessoas com quem trabalhei e um pouco mais sobre mim.</p>
+        </section>
+        <section class="feedback">
+            <h2>Avaliações dos Meus Chefes</h2>
+            <div class="feedback-item">
+                <img src="michael_scott.jpg" alt="Michael Scott">
+                <p><strong>Michael Scott:</strong> "Ryan é incrível. Ele é como... sabe quando você encontra aquele diamante bruto? Só que é um diamante moderno, tipo de um filme de ficção científica. Ele tem tantas ideias que às vezes me pergunto: 'Esse cara vai ser meu chefe um dia?' E provavelmente vai. Mas não ainda, porque eu sou o chefe agora. E ele ainda tem muito o que aprender... comigo."</p>
+            </div>
+            <div class="feedback-item">
+                <img src="David_wallace.jpg" alt="David Wallace">
+                <p><strong>David Wallace:</strong> "Ryan é um funcionário interessante. Ele tem ambição, o que é ótimo, e ele é criativo. Às vezes ele... pensa muito fora da curva, mas, em geral, isso leva a soluções inovadoras. Ele ainda está crescendo, e é fascinante ver isso em tempo real. Acho que ele tem um futuro brilhante... contanto que mantenha os pés no chão."</p>
+            </div>
+            <div class="feedback-item">
+                <img src="jim_halpert.jpg" alt="Jim Halpert">
+                <p><strong>Jim Halpert:</strong> "Ah, Ryan. Ele é o tipo de pessoa que entra em uma sala e faz você pensar: 'Esse cara sabe algo que eu não sei.' Às vezes é verdade, outras vezes ele só está tentando soar impressionante. Mas, honestamente, ele é bom no que faz. Se ele não estiver ocupado explicando a você por que startups são o futuro, ele provavelmente está fazendo algo incrível. Ou pelo menos parecendo ocupado. Acho que ele deve ter lido um artigo sobre produtividade uma vez."</p>
+               
+            
+            </div>
+        </section>
+        <button onclick="window.open('https://www.youtube.com/embed/yL1z1ZHD0K4?si=LI4kssqzkZldTrpt', '_blank')">Sucesso</button>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Meu Portfólio | Feito com ❤️ por <a href="#">Ryan</a></p>
+    </footer>
+</body>
+</html>
