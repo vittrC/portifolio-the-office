@@ -14,8 +14,9 @@
         header {
             background-color: #000000;
             color: white;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
+            border-bottom: 5px dashed #ff6347; 
         }
         header h1 {
             margin: 0;
@@ -27,14 +28,18 @@
         }
         nav {
             background-color: #353535;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
+            border-top: 2px solid #ff6347; 
         }
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+        }
+        nav a:hover {
+            color: #ff6347; 
         }
         .gallery {
             display: flex;
@@ -45,25 +50,33 @@
         .gallery-item {
             background-color: white;
             border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 15px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            margin: 20px;
             overflow: hidden;
-            transition: transform 0.3s;
-            width: 300px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            width: 350px;
+            height: auto;
+            border: 2px solid #ff6347;
         }
         .gallery-item:hover {
-            transform: translateY(-5px);
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
         .gallery-item img {
             width: 100%;
-            height: 200px;
+            height: 220px;
             object-fit: cover;
+            border-bottom: 2px solid #ff6347;
         }
         .gallery-item h3 {
             margin: 0;
             padding: 15px;
             text-align: center;
             background-color: #f7f7f7;
+            border-top: 2px solid #ff6347; 
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #000000;;
         }
         footer {
             background-color: #000000;
@@ -74,12 +87,36 @@
             bottom: 0;
             width: 100%;
         }
+        footer p {
+            margin: 0;
+        }
+     
+        .logo {
+            position: fixed;
+            bottom: 20px; 
+            right: 20px; 
+            width: 60px; 
+            height: 60px; 
+            border-radius: 100%; 
+            border: 3px solid #ff6347; 
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .logo img {
+            width: 110%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 100%;
+        }
     </style>
 </head>
 <body>
     <header>
         <h1>Dunder Mifflin</h1>
-        <p>The Office funcionários</p>
+        <p>The Office Funcionários</p>
     </header>
     <nav>
         <a href="home.html">Início</a>
@@ -87,44 +124,60 @@
     </nav>
     <div class="gallery">
         <div class="gallery-item">
+            <a href="Jim.html">
+                <img src="Giovana/Jim.jpg" alt="Jim Halpertim">
+                <h3>Avaliação Anual de Jim Halpertim</h3>
+            </a>
+        </div>
+        <div class="gallery-item">
             <a href="dwight.html">
-                <img src="sara/sua-foto.jpg" alt="Dwight">
-                <h3>Dwight K. Schrute</h3>
+                <img src="sara/sua-foto.jpg" alt="Dwight K. Schrute">
+                <h3>Avaliação Anual de Dwight K. Schrute</h3>
             </a>
         </div>
         <div class="gallery-item">
-            <a href="pagina2.html">
-                <img src="imagem2.jpg" alt="Michael Scott">
-                <h3>Momentos de Michael Scott</h3>
+            <a href="kevin.html">
+                <img src="isa/Kevin.webp" alt="Kevin Malone">
+                <h3>Avaliação Anual de Kevin Malone</h3>
             </a>
         </div>
         <div class="gallery-item">
-            <a href="pagina3.html">
-                <img src="imagem3.jpg" alt="Dwight Schrute">
-                <h3>Melhores Momentos de Dwight</h3>
+            <a href="pam.html">
+                <img src="edson/pam.webp" alt="Pam Beesly">
+                <h3>Avaliação Anual de Pam Beesly</h3>
             </a>
         </div>
         <div class="gallery-item">
-            <a href="pagina4.html">
-                <img src="imagem4.jpg" alt="Elenco de The Office">
-                <h3>A Família The Office</h3>
+            <a href="ryan.html">
+                <img src="vitor/img1.jpg" alt="Ryan Howard">
+                <h3>Avaliação Anual de Ryan Howard</h3>
             </a>
         </div>
         <div class="gallery-item">
-            <a href="pagina5.html">
-                <img src="imagem5.jpg" alt="Kevin's Chili">
-                <h3>O Chili de Kevin</h3>
+            <a href="ryan.html">
+                <img src="vitor/img1.jpg" alt="Pegadinhas">
+                <h3>Avaliação Anual de Jim Halpertim</h3>
             </a>
         </div>
         <div class="gallery-item">
-            <a href="pagina6.html">
-                <img src="imagem6.jpg" alt="Pegadinhas">
-                <h3>As Melhores Pegadinhas de Jim</h3>
+            <a href=".html">
+                <img src="imagem7.jpg" alt="Pegadinhas">
+                <h3>Avaliação Anual de Jim Halpertim</h3>
+            </a>
+        </div>
+        <div class="gallery-item">
+            <a href="pagina8.html">
+                <img src="imagem8.jpg" alt="Pegadinhas">
+                <h3>Avaliação Anual de Jim Halpertim</h3>
             </a>
         </div>
     </div>
     <footer>
         <p>&copy; 2025 Dunder Mifflin. Inspirado por The Office.</p>
     </footer>
+
+    <div class="logo">
+        <img src="michael.png" alt="Logo Michael Scott">
+    </div>
 </body>
 </html>
