@@ -74,11 +74,30 @@
             height: 500px;
             border: none;
         }
+
+        .btn-homepage {
+        position: fixed;
+        bottom: 20px;  
+        right: 20px;   
+        background-color: #606367;  
+        color: white;  
+        padding: 10px 20px;  
+        border-radius: 5px;  
+        text-decoration: none;  
+        font-size: 16px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        transition: background-color 0.3s ease;  
+        }
+
+        
+        .btn-homepage:hover {
+        background-color: #a4a3a3; 
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Votação: Funcionário do Ano</h1>
+        <h1>Votação: Funcionário do Mês</h1>
     </header>
     <nav>
         <a href="home.html">Início</a>
@@ -91,6 +110,7 @@
     </main>
     <footer>
         <p>&copy;2025 Dunder Mifflin. Inspirado por The Office.</p>
+        <a href="home.html" class="btn-homepage">Voltar à Homepage</a>
     </footer>
 </body>
 </html>
